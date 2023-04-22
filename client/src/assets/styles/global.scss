@@ -1,0 +1,66 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-family: sans-serif;
+  box-sizing: border-box;
+  line-height: 1.5;
+  font-size: 1.2vw;
+}
+
+body {
+  background: linear-gradient(#141e30, #243b55);
+}
+
+body,
+table,
+form,
+input,
+textarea,
+select,
+option {
+  font: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: 0.5em;
+  font-weight: normal;
+}
+
+h1 {
+  font-size: 3.5em;
+}
+
+h2 {
+  font-size: 3em;
+}
+
+h3 {
+  font-size: 2.4em;
+}
+
+h4 {
+  font-size: 2em;
+}
+
+h5 {
+  font-size: 1.6em;
+}
+
+h6 {
+  font-size: 1.1em;
+}
+
+ul {
+  list-style-type: none;
+}
