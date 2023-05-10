@@ -16,7 +16,6 @@ export class SignInModel {
 
 export const SignInModelSchema: z.ZodSchema<SignInModel> = z.object({
   id: z.number().int(),
-  // email: z.string().email().transform((email) => email.trim()),
   email: z.string(),
   password: z.string(),
   keepMeSignedIn: z.boolean(),

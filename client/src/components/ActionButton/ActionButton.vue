@@ -1,5 +1,5 @@
 <template>
-  <div class="action-button-wrapper">
+  <div :class="animation ? ['action-button-wrapper', 'active'] : 'action-button-wrapper'">
     <span></span>
     <span></span>
     <span></span>
@@ -16,13 +16,16 @@ import { titleFromName } from '@/global/strings'
   props: {
     type: String,
     value: String,
+    animation: {
+      type: Boolean,
+      default: false,
+    },
   },
   methods: {
     titleFromName,
   },
 })
-export default class ActionButton extends Vue {
-}
+export default class ActionButton extends Vue {}
 </script>
 
 <style scoped lang="scss">
@@ -104,7 +107,9 @@ $hover-transition: 0.5s;;
       0 0 0.75em $primary-color,
       0 0 1em $primary-color;
   }
+}
 
+.active {
   span:nth-child(1) {
     @include set-animation(top);
     @include gradient-animation(left, 90deg, 0.0s);

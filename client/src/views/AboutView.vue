@@ -7,7 +7,7 @@
 
 <script lang="ts">
 import { Options, Vue } from 'vue-class-component'
-import HelloWorld from '@/components/HelloWorld.vue' // @ is an alias to /src
+import HelloWorld from '@/components/HelloWorld/HelloWorld.vue' // @ is an alias to /src
 
 @Options({
   components: {
@@ -19,6 +19,8 @@ export default class AboutView extends Vue {}
 
 <style scoped lang="scss">
 .about {
+  padding: 4em 0;
   text-align: center;
+  color: #fff;
 }
 </style>

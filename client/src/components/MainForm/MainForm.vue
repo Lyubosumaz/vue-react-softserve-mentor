@@ -38,9 +38,8 @@
 
 <script lang="ts">
 import { Options, Vue } from 'vue-class-component'
-import CommonInput from '@/components/CommonInput.vue'
-import ActionButton from '@/components/ActionButton.vue'
-import InputGroup from '@/components/InputGroup.vue'
+import ActionButton from '@/components/ActionButton/ActionButton.vue'
+import InputGroup from '@/components/InputGroup/InputGroup.vue'
 import { isEmptyString, titleFromName } from '@/global/strings'
 
 @Options({
@@ -49,7 +48,6 @@ import { isEmptyString, titleFromName } from '@/global/strings'
     entity: Object,
   },
   components: {
-    CommonInput,
     InputGroup,
     ActionButton,
   },
@@ -62,7 +60,6 @@ export default class MainForm extends Vue {
     if (Array.isArray(value)) {
       return 'multiple-field'
     }
-
     switch (typeof value) {
       case 'boolean':
         return 'checkbox'

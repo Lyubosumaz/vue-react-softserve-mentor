@@ -32,6 +32,7 @@ import { Options, Vue } from 'vue-class-component'
       type: Boolean,
       default: false,
     },
+    'callback-value': Function,
   },
 })
 export default class CommonInput extends Vue {

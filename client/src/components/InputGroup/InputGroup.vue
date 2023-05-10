@@ -54,9 +54,9 @@
 
 <script lang="ts">
 import { Options, Vue } from 'vue-class-component'
-import CommonInput from '@/components/CommonInput.vue'
-import CheckboxInput from '@/components/CheckboxInput.vue'
-import InputLabel from '@/components/InputLabel.vue'
+import CheckboxInput from '@/components/CheckboxInput/CheckboxInput.vue'
+import CommonInput from '@/components/CommonInput/CommonInput.vue'
+import InputLabel from '@/components/InputLabel/InputLabel.vue'
 import { titleFromName } from '@/global/strings'
 
 @Options({

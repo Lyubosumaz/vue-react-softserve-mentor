@@ -4,13 +4,15 @@ module.exports = {
     node: true,
   },
   extends: [
-    'plugin:vue/vue3-essential',
+    'prettier',
     '@vue/airbnb',
+    'plugin:vue/vue3-essential',
     '@vue/typescript/recommended',
   ],
   parserOptions: {
     ecmaVersion: 2020,
   },
+  plugins: ['prettier', 'vue'],
   rules: {
     'no-console': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
     'no-debugger': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
@@ -23,6 +25,9 @@ module.exports = {
     'import/no-extraneous-dependencies': ['off', { devDependencies: false }],
     'vue/require-v-for-key': 'off',
     'no-prototype-builtins': 'off',
+    'vuejs-accessibility/form-control-has-label': 'off',
+    'no-param-reassign': 'off',
+    'vue/no-multiple-template-root': 'off',
   },
   overrides: [
     {
